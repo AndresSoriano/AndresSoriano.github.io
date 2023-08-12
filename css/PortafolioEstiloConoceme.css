@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+*{
+	margin: 0;
+	padding: none;
+	box-sizing: border-box;
+}
+
+.Contenedor{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 35px 15px 15px 15px;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.Contenido{
+	position: relative;
+	float: left;
+	background: linear-gradient(122deg, rgba(168,245,226,1) 0%, rgb(89, 228, 64) 81%);
+	width: 90vw;
+	height: 70vh;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 40px 20px;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.ContenedorFoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+	float: left;
+	width: 30%;
+	height: 100%;
+	
+	overflow: hidden;
+	z-index: 0;
+}
+
+.ImgSoriano{
+	max-width: 90%;
+	z-index: 0;
+    border-radius: 50%;
+	box-shadow: 4px 4px 5px black;
+}
+
+.SobreMi{
+	font-family: 'Lugrasimo';
+    display: flex;
+	align-content: center;
+	align-items: center;
+    justify-content: center;
+    position: relative;
+	float: left;
+	width: 70%;
+	height: 100%;
+	padding: 5px;
+	overflow: hidden;
+	z-index: 0;
+}
+
+@media (max-width: 757px){
+	.SobreMi{
+		padding-top: 30px;
+		padding-left: 3px;
+		padding-right: 3px;
+		padding-bottom: 3px;
+		font-size: 15px;
+		overflow: auto;
+	}
+}
+
+@media (max-width: 600px){
+	.SobreMi{
+		padding-top: 55px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		font-size: 13px;
+		overflow: auto;
+	}
+}
+
+@media (max-width: 360px){
+	.SobreMi{
+		padding-top: 200px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		font-size: 13px;
+		overflow: auto;
+	}
+}
+
+.SobreMi::-webkit-scrollbar{
+	width: 7px;
+}
+
+.SobreMi::-webkit-scrollbar-thumb{
+	background: linear-gradient(184deg, rgba(215,20,20,1) 0%, rgba(255,245,0,1) 100%);
+	border-radius: 5px;
+}
+
+.ContenidoCentradoSobreMi{
+    text-align: center;
+    word-break: break-all;
+}
+
+.SobreMi a{
+	font-weight: bold;
+	text-decoration: none;
+	cursor: alias;
+	transition: all 0.4s;
+}
+
+.SobreMi a:hover{
+	font-weight: bold;
+	background: -webkit-linear-gradient(135deg, #e2104f, #3e46b4);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
